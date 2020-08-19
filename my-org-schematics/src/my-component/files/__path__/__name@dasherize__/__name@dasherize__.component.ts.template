@@ -1,0 +1,10 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'my-org-sc-<%= selector %>',
+  templateUrl: './<%= dasherize(name) %>.component.html',
+  styleUrls: ['./<%= dasherize(name) %>.component.css']
+})
+export class <%= classify(name) %>Component implements OnInit {
+    ngOnInit(){ }
+};
